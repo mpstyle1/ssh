@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+	
+	<!-- log4j Level :  TRACE, DEBUG, INFO, WARN, ERROR, FATAL -->
+	
+	<Appenders>
+		
+		<Console name="Console" target="SYSTEM_OUT">
+			 
+			<PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+			<!--
+			<PatternLayout pattern="[%d{HH:mm:ss}-%-5p] %m (%F.%M():%L) [%c]%n"/>
+			 -->
+		</Console>
+		
+	</Appenders>
+	
+	
+	
+	<Loggers>
+		
+		<!-- 시스템, 프레임워크 관련 log -->
+		<Logger name="org.apache.catalina" level="WARN"></Logger>
+    	<Logger name="org.apache.commons" level="WARN"></Logger>
+    	<Logger name="org.aspectj.weaver" level="INFO"></Logger>
+    	<Logger name="org.apache" level="INFO"></Logger>
+    	<Logger name="org.springframework" level="INFO"></Logger>
+    	<Logger name="org.mybatis" level="INFO"></Logger>
+    	<Logger name="org.apache.ibatis" level="INFO"></Logger>
+    	<Logger name="com.duzon.ssh.mapper" level="INFO"></Logger>
+    	
+		<!-- sql 관련 log -->
+		<Logger name="jdbc.sqlonly" level="FATAL" additivity="false">
+    		<AppenderRef ref="Console"/>
+    	</Logger>
+    	<Logger name="jdbc.sqltiming" level="INFO" additivity="false">
+    		<AppenderRef ref="Console"/>
+    	</Logger>
+    	<Logger name="jdbc.audit" level="FATAL" additivity="false">
+    		<AppenderRef ref="Console"/>
+    	</Logger>
+    	<Logger name="jdbc.resultset" level="FATAL" additivity="false">
+    		<AppenderRef ref="Console"/>
+    	</Logger>
+    	<Logger name="jdbc.connection" level="FATAL" additivity="false">
+    		<AppenderRef ref="Console"/>
+    	</Logger>
+    	<Logger name="log4jdbc.debug" level="FATAL" additivity="false">
+    		<AppenderRef ref="Console"/>
+    	</Logger>
+    	
+		<Root level="INFO">
+			<AppenderRef ref="Console"/>
+		</Root>
+		
+	</Loggers>
+  
+</Configuration>

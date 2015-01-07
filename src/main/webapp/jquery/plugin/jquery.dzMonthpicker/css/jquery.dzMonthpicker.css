@@ -1,0 +1,29 @@
+.calLayout{	border:1px solid #DDDDDD; background-color:#ECEADF;	position:absolute;padding:2px;display:none;z-index:9999	}			
+.calTitle{ border:1px solid #D4D1BF; background-color: #ffffff; width:99%;	font-size:9pt;}			
+.calHeader{	padding:2px; padding-bottom:0px;text-align:center;}
+.calBody{padding:2px;padding-top:0px;text-align:center;	}
+.calDay{background-color: #FBFBFB;border:1px solid #CBC7BD;	width:20px;float:left;font-size:8pt;padding-top:3px;padding-bottom:2px;cursor:pointer;}
+.calSunDay{	background-color: #FBFBFB;border:1px solid #CBC7BD;	width:20px;float:left;font-size:8pt;padding-top:3px;padding-bottom:2px;cursor:pointer;color:red;}
+.calSatDay{ background-color: #FBFBFB;border:1px solid #CBC7BD;	width:20px;float:left;font-size:8pt;padding-top:3px;padding-bottom:2px;cursor:pointer;	color:blue;}
+.calOtherDay{background-color: #FBFBFB;	border:1px solid #CBC7BD;width:20px;float:left;font-size:8pt;padding-top:3px;padding-bottom:2px;cursor:pointer;color:#CBC7BD;}
+.dayToday{background-color: #368CFE;border:1px solid #CBC7BD;font-weight:bold;font-weight:bold;width:20px;float:left;font-size:8pt;padding-top:3px;padding-bottom:2px;cursor:pointer;color:white;	}
+.calSelDay{	background-color: #CF4040;border:1px solid #CBC7BD;font-weight:bold;width:20px;float:left;font-size:8pt;padding-top:3px;padding-bottom:2px;cursor:pointer;text-decoration:underline;color:white;}
+.dayEvMon{font-size:8pt;width:25px;	height:20px;background-color: #FBFBFB;border:1px solid #CBC7BD;	padding:4px 4px 0px 3px;float:left;cursor:pointer;}		
+.MonToday{font-size:8pt;width:25px;	height:20px;background-color: #FBEC88;border:1px solid #CBC7BD;	font-weight:bold;padding:4px 4px 0px 3px;color:#635E55;cursor:pointer;}
+.selMon{font-size:8pt;width:25px;height:20px;background-color: #98835F;border:1px solid #7D6C4F;font-weight:bold;padding:4px 4px 0px 3px;text-decoration:underline;color:white;}
+.calOnDay{background-color: #E4D4B9;border:1px solid #D1B789;float:left;cursor:pointer;color:#635E55;}
+.calDaySpace{padding:1px;float:left;}
+.calDayBr{clear:both;height:2px;}
+.calDayTitle{padding-top:2px;width:22px;float:left;	font-size:8pt;}			
+.divHeadOnRigth{color:#18CCA8;cursor:pointer;}
+.todayBtn{clear:both;text-align: center;font-size:8pt;cursor:pointer;background-color: #FBFBFB;border:1px solid #CBC7BD;padding:4px 4px 0px 3px;height:15px;}
+.todayLay{padding-left:2px;}</style>
+
+.calBtnIcon{background:url('../jquery/plugin/jquery.dzMonthpicker/images/btn_cal_normal.gif') no-repeat left;width:100px;height:20px;}
+.calBtnPreIcon{background-image:url('../images/bar.gif') no-repeat left;}
+.calBtnNextIcon{background-image:url('../images/bar.gif') no-repeat left;}
+.csstest{
+			background:url('../jquery/plugin/jquery.dzMonthpicker/images/btn_cal_normal.gif') no-repeat left;
+			width:100px;
+			height:20px;
+		}

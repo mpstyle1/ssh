@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+	
+	<!-- 사용 Driver -->
+	<classPathEntry location="D:\eclipse_ssh\workspace\ssh\WebContent\WEB-INF\lib\ojdbc14.jar" />
+	<!-- 
+	<javaTypeResolver>
+  		<property name="forceBigDecimals" value="true" />
+	</javaTypeResolver>
+	 -->
+	<context id="ssh" targetRuntime="MyBatis3">
+		<!-- DB 정보 -->
+		<jdbcConnection
+			driverClass="oracle.jdbc.driver.OracleDriver"
+			connectionURL="jdbc:oracle:thin:@172.19.25.20:1521:DPTDB"
+			userId="shinsh"
+			password="shin1223" />
+    	
+		<javaTypeResolver>
+			<property name="forceBigDecimals" value="false" />
+		</javaTypeResolver>
+    
+    	<!-- domain package -->
+    	<javaModelGenerator targetPackage="com.duzon.ssh.model" targetProject="ssh/src/main/java">
+    		<property name="trimStrings" value="false" />
+		</javaModelGenerator>
+		    	
+    	<!-- sql package -->
+    	<sqlMapGenerator targetPackage="mapper" targetProject="ssh/src/main/resources">
+    		<property name="enableSubPackages" value="true" />
+    	</sqlMapGenerator>
+    	
+    	<!-- DAO package -->
+    	<javaClientGenerator targetPackage="com.duzon.ssh.mapper" targetProject="ssh/src/main/java" type="XMLMAPPER">
+    		<property name="enableSubPackages" value="true" />
+    	</javaClientGenerator>
+    	
+    	<!-- 생성할 테이블 -->
+    	<table tableName="TB_CUST"><property name="useActualColumnNames" value="true"/></table>
+    	<table tableName="TB_USER"><property name="useActualColumnNames" value="true"/></table>
+    	
+  	</context>
+</generatorConfiguration>
